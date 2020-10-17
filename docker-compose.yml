@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  build:
+    image: node:13
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: bash -c "yarn && yarn build"
+
+    
+# RUN
+# docker-compose run --rm build
